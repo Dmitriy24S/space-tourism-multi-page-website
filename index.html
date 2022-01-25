@@ -16,41 +16,53 @@
     <script src="script.js" defer></script>
     <title>Space tourism website</title>
   </head>
-  <body>
+  <body class="home">
     <header>
       <div class="nav__logo">
         <img src="assets/shared/logo.svg" alt="site-logo" />
       </div>
-      <div class="nav__menu-container">
-        <img
-          src="assets/shared/icon-hamburger.svg"
-          class="nav__menu--icon hamburger-icon"
-          alt="menu-icon"
-        />
-        <img
-          src="assets/shared/icon-close.svg"
-          class="nav__menu--icon close-icon"
-          alt="menu-icon"
-        />
-        <ul class="nav__menu primary-navigation underline-indicators">
+      <nav class="nav__menu-container">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+
+          <img
+            src="assets/shared/icon-hamburger.svg"
+            class="nav__menu--icon hamburger-icon"
+            alt="menu-icon"
+          />
+          <img
+            src="assets/shared/icon-close.svg"
+            class="nav__menu--icon close-icon"
+            alt="menu-icon"
+          />
+        </button>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="nav__menu primary-navigation underline-indicators"
+        >
           <li class="active">
-            <a href="#" class="text-white uppercase letter-spacing-3"> <span> 00 </span> Home </a>
+            <a href="index.html" class="text-white uppercase letter-spacing-3">
+              <span> 00 </span> Home
+            </a>
           </li>
           <li>
-            <a href="#" class="text-white uppercase letter-spacing-3">
+            <a href="destination.html" class="text-white uppercase letter-spacing-3">
               <span> 01 </span> Destination
             </a>
           </li>
           <li>
-            <a href="#" class="text-white uppercase letter-spacing-3"> <span> 02 </span> Crew </a>
+            <a href="crew.html" class="text-white uppercase letter-spacing-3">
+              <span> 02 </span> Crew
+            </a>
           </li>
           <li>
-            <a href="#" class="text-white uppercase letter-spacing-3">
+            <a href="technology.html" class="text-white uppercase letter-spacing-3">
               <span> 03 </span> Technology
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <main>
