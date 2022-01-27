@@ -643,7 +643,11 @@ body {
   }
 }
 
-/* destination moon */
+/* ========================== */
+/*      Destination Page      */
+/* ========================== */
+
+/* destination - moon */
 .destination-section {
   display: flex;
   flex-direction: column;
@@ -675,6 +679,9 @@ body {
   flex-direction: column;
   gap: 4rem;
   margin: 1rem 0 5rem;
+  border-top: 1px solid hsl(var(--clr-white) / 0.25);
+  padding-top: 2.2rem;
+  width: 100%;
 }
 .single-data-info {
   display: flex;
@@ -701,6 +708,7 @@ body {
   }
   .data-container {
     flex-direction: row;
+    justify-content: center;
   }
 }
 /* desktop */
