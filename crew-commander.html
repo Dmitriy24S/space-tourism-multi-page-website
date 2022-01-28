@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Space tourism website</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+  <body class="crew">
+    <a href="#main" class="skip-to-content"> Skip to content </a>
+    <header>
+      <div class="nav__logo">
+        <img src="assets/shared/logo.svg" alt="site-logo" class="header-logo" />
+      </div>
+      <nav class="nav__menu-container">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+          <img
+            src="assets/shared/icon-hamburger.svg"
+            class="nav__menu--icon hamburger-icon"
+            alt="menu-icon"
+          />
+          <img
+            src="assets/shared/icon-close.svg"
+            class="nav__menu--icon close-icon"
+            alt="menu-icon"
+          />
+        </button>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="nav__menu primary-navigation underline-indicators ff-sans-cond"
+        >
+          <li>
+            <a href="index.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 00 </span> Home
+            </a>
+          </li>
+          <li>
+            <a href="destination-moon.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 01 </span> Destination
+            </a>
+          </li>
+          <li class="active">
+            <a
+              href="crew-commander.html"
+              aria-current="page"
+              class="text-white uppercase letter-spacing-3"
+            >
+              <span aria-hidden="true"> 02 </span> Crew
+            </a>
+          </li>
+          <li>
+            <a href="technology.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 03 </span> Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <main id="main">
+      <div class="title">
+        <h1 class="numbered-title"><span aria-hidden="true">02 </span> Meet your crew</h1>
+      </div>
+      <section class="crew-img">
+        <div class="crew-img">
+          <img src="assets/crew/image-douglas-hurley.png" alt="douglas hurley" />
+        </div>
+        <!-- <picture>
+          <source srcset="assets/crew/image-douglas-hurley.png" type="image/webp" />
+          <img src="assets/crew/image-douglas-hurley.png" alt="Douglas Hurley" />
+        </picture> -->
+      </section>
+      <section class="content-section">
+        <h1 class="numbered-title"><span aria-hidden="true">02 </span> Meet your crew</h1>
+        <article class="text-container">
+          <div class="text-header">
+            <span class="crew-title uppercase fs-500">Commander</span>
+            <h2 class="uppercase fs-600">Douglas Hurley</h2>
+          </div>
+          <p class="text-accent">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA
+            astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+          </p>
+        </article>
 
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
-</body>
+        <div class="dot-indicators flex">
+          <button class="active" aria-current="location">
+            <span class="sr-only">The commander</span>
+          </button>
+          <button><span class="sr-only">The mission specialist</span></button>
+          <button><span class="sr-only">The Pilot</span></button>
+          <button><span class="sr-only">The engineer</span></button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

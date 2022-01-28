@@ -16,6 +16,7 @@
     <script src="script.js" defer></script>
     <title>Space tourism website</title>
   </head>
+
   <body class="destination">
     <a href="#main" class="skip-to-content"> Skip to content </a>
     <header>
@@ -56,7 +57,7 @@
             </a>
           </li>
           <li>
-            <a href="crew.html" class="text-white uppercase letter-spacing-3">
+            <a href="crew-commander.html" class="text-white uppercase letter-spacing-3">
               <span aria-hidden="true"> 02 </span> Crew
             </a>
           </li>
@@ -68,14 +69,18 @@
         </ul>
       </nav>
     </header>
-    <main id="main" class="grid-container----xxxx grid-container--destination">
-      <section class="destination-section left-destination-section">
+
+    <main id="main">
+      <section class="content-section left-destination-section">
         <h1 class="numbered-title"><span aria-hidden="true">01 </span> Pick your destination</h1>
         <div class="planet-img">
-          <img src="assets/destination/image-moon.png" alt="the moon" />
+          <picture>
+            <source srcset="assets/destination/image-moon.webp 1x" type="image/webp" />
+            <img src="assets/destination/image-moon.png" alt="the moon" />
+          </picture>
         </div>
       </section>
-      <section class="destination-section">
+      <section class="content-section">
         <div class="tab-list underline-indicators flex ff-sans-cond" style="--underline-gap: 1rem">
           <button aria-current="location" class="uppercase text-accent letter-spacing-3 active">
             Moon
@@ -84,23 +89,23 @@
           <button class="uppercase text-accent letter-spacing-3">Europa</button>
           <button class="uppercase text-accent letter-spacing-3">Titan</button>
         </div>
-        <div class="text-container">
+        <article class="text-container">
           <h2 class="uppercase fs-900">Moon</h2>
           <p class="text-accent">
             See our planet as you’ve never seen it before. A perfect relaxing trip away to help
             regain perspective and come back refreshed. While you’re there, take in some history by
             visiting the Luna 2 and Apollo 11 landing sites.
           </p>
-        </div>
+        </article>
 
         <div class="data-container uppercase letter-spacing-3">
           <div class="single-data-info">
-            <p class="text-accent">Avg. distance</p>
-            <p class="fs-600 letter-spacing-2">384,400 km</p>
+            <p class="text-accent fs-200">Avg. distance</p>
+            <p class="letter-spacing-2">384,400 km</p>
           </div>
           <div class="single-data-info">
-            <p class="text-accent">Est. travel time</p>
-            <p class="fs-600 letter-spacing-2">3 days</p>
+            <p class="text-accent fs-200">Est. travel time</p>
+            <p class="letter-spacing-2">3 days</p>
           </div>
         </div>
       </section>
