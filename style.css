@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* Reset margins */
 body,
 h1,
@@ -657,6 +661,9 @@ body {
 }
 .destination main {
   gap: 5rem;
+}
+.destination-text {
+  margin-bottom: 1rem;
 }
 /* tab list - destination */
 .tab-list.underline-indicators > * {
