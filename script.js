@@ -20,11 +20,13 @@ const tabs = document.querySelectorAll('[role="tab"]');
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
-    // active tab style
+    // active tab style and aria
     tabs.forEach((tab) => {
       tab.classList.remove("active");
+      tab.setAttribute("aria-current", "none");
     });
     tab.classList.add("active");
+    tab.setAttribute("aria-current", "location");
 
     // info content panel update
     const tabContainer = tab.parentNode;
