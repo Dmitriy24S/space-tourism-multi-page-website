@@ -20,28 +20,35 @@ const tabs = document.querySelectorAll('[role="tab"]');
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
+    // active tab style
     tabs.forEach((tab) => {
       tab.classList.remove("active");
     });
     tab.classList.add("active");
 
-    // info panel update
+    // info content panel update
     const tabContainer = tab.parentNode;
     const mainContainer = tabContainer.parentNode;
-    targetingContent = tab.getAttribute("aria-controls");
+    const targetContent = tab.getAttribute("aria-controls");
 
-    mainContainer.querySelectorAll("article").forEach((article) => {
-      article.setAttribute("hidden", true);
-    });
-    mainContainer.querySelector(`#${targetingContent}`).removeAttribute("hidden");
+    hideContent(mainContainer, "article");
+    showContent(mainContainer, `#${targetContent}`);
 
     // picture panel update
     const pictureContainer = document.querySelector(".left-destination-section");
     const targetImage = tab.getAttribute("data-image");
 
-    pictureContainer.querySelectorAll("picture").forEach((picture) => {
-      picture.setAttribute("hidden", true);
-    });
-    pictureContainer.querySelector(`#${targetImage}`).removeAttribute("hidden");
+    hideContent(pictureContainer, "picture");
+    showContent(pictureContainer, `#${targetImage}`);
   });
 });
+
+const hideContent = (parent, content) => {
+  parent.querySelectorAll(content).forEach((item) => {
+    item.setAttribute("hidden", true);
+  });
+};
+
+const showContent = (parent, content) => {
+  parent.querySelector(content).removeAttribute("hidden");
+};
