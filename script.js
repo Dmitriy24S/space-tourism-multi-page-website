@@ -32,12 +32,12 @@ tabs.forEach((tab) => {
     const tabContainer = tab.parentNode;
     const mainContainer = tabContainer.parentNode;
     const targetContent = tab.getAttribute("aria-controls");
-
+    console.log(mainContainer);
     hideContent(mainContainer, "article");
     showContent(mainContainer, `#${targetContent}`);
 
     // picture panel update
-    const pictureContainer = document.querySelector(".left-destination-section");
+    const pictureContainer = document.querySelector(".picture-container");
     const targetImage = tab.getAttribute("data-image");
 
     hideContent(pictureContainer, "picture");
