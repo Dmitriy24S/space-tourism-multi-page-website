@@ -103,7 +103,7 @@
         <h1 class="numbered-title"><span aria-hidden="true">02 </span> Meet your crew</h1>
 
         <!-- commander -->
-        <article class="text-container" id="commander-tab">
+        <article class="text-container" id="commander-tab" role="tabpanel" tabindex="0">
           <div class="text-header">
             <span class="crew-title uppercase fs-500">Commander</span>
             <h2 class="uppercase fs-600">Douglas Hurley</h2>
@@ -115,7 +115,7 @@
         </article>
 
         <!-- specialist -->
-        <article class="text-container" id="specialist-tab" hidden>
+        <article class="text-container" id="specialist-tab" role="tabpanel" tabindex="0" hidden>
           <div class="text-header">
             <span class="crew-title uppercase fs-500">Mission Specialist</span>
             <h2 class="uppercase fs-600">Mark Shuttleworth</h2>
@@ -128,7 +128,7 @@
         </article>
 
         <!-- pilot -->
-        <article class="text-container" id="pilot-tab" hidden>
+        <article class="text-container" id="pilot-tab" role="tabpanel" tabindex="0" hidden>
           <div class="text-header">
             <span class="crew-title uppercase fs-500">Pilot</span>
             <h2 class="uppercase fs-600">Victor Glover</h2>
@@ -141,7 +141,7 @@
         </article>
 
         <!-- engineer  -->
-        <article class="text-container" id="engineer-tab" hidden>
+        <article class="text-container" id="engineer-tab" role="tabpanel" tabindex="0" hidden>
           <div class="text-header">
             <span class="crew-title uppercase fs-500">Flight Engineer</span>
             <h2 class="uppercase fs-600">Anousheh Ansari</h2>
@@ -154,7 +154,7 @@
         </article>
 
         <!-- Dot menu -->
-        <div class="dot-indicators flex" role="tablist">
+        <div class="dot-indicators flex" role="tablist" aria-label="crew list">
           <button
             class="active"
             role="tab"
