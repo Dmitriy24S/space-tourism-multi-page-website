@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Space tourism website</title>
+  </head>
+
+  <body class="technology">
+    <a href="#main" class="skip-to-content"> Skip to content </a>
+    <header>
+      <div class="nav__logo">
+        <img src="assets/shared/logo.svg" alt="site-logo" class="header-logo" />
+      </div>
+      <nav class="nav__menu-container">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+          <img
+            src="assets/shared/icon-hamburger.svg"
+            class="nav__menu--icon hamburger-icon"
+            alt="menu-icon"
+          />
+          <img
+            src="assets/shared/icon-close.svg"
+            class="nav__menu--icon close-icon"
+            alt="menu-icon"
+          />
+        </button>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="nav__menu primary-navigation underline-indicators ff-sans-cond"
+        >
+          <li>
+            <a href="index.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 00 </span> Home
+            </a>
+          </li>
+          <li>
+            <a href="destination.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 01 </span> Destination
+            </a>
+          </li>
+          <li>
+            <a href="crew.html" aria-current="page" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 02 </span> Crew
+            </a>
+          </li>
+          <li class="active">
+            <a href="technology.html" class="text-white uppercase letter-spacing-3">
+              <span aria-hidden="true"> 03 </span> Technology
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="title">
+        <h1 class="numbered-title"><span aria-hidden="true">03 </span> Space launch 101</h1>
+      </div>
+
+      <!-- Picture section -->
+      <section class="crew-img picture-container technology-img">
+        <!-- vehicle -->
+        <picture id="vehicle-image">
+          <img
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="launch vehicle"
+            class="landscape-img"
+          />
+          <img
+            src="assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="launch vehicle"
+            class="portrait-img"
+          />
+        </picture>
+        <!-- capsule -->
+        <picture id="capsule-image" hidden>
+          <img
+            src="assets/technology/image-space-capsule-landscape.jpg"
+            alt="capsule"
+            class="landscape-img"
+          />
+          <img
+            src="assets/technology/image-space-capsule-portrait.jpg"
+            alt="capsule"
+            class="portrait-img"
+          />
+        </picture>
+        <!-- spaceport  -->
+        <picture id="spaceport-image" hidden>
+          <img
+            src="assets/technology/image-spaceport-landscape.jpg"
+            alt="spaceport"
+            class="landscape-img"
+          />
+          <img
+            src="assets/technology/image-spaceport-portrait.jpg"
+            alt="spaceport"
+            class="portrait-img"
+          />
+        </picture>
+      </section>
+
+      <!-- Text section -->
+      <section class="content-section">
+        <h1 class="numbered-title"><span aria-hidden="true">03 </span> Space launch 101</h1>
+        <!-- vehicle -->
+        <article class="text-container" id="vehicle-tab" role="tabpanel" tabindex="0">
+          <div class="text-header">
+            <span class="crew-title uppercase fs-500 text-accent"> The terminology...</span>
+            <h2 class="uppercase fs-600">Launch vehicle</h2>
+          </div>
+          <p class="text-accent">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+            from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier
+            rocket is the most powerful in operation. Standing 150 metres tall, it's quite an
+            awe-inspiring sight on the launch pad!
+          </p>
+        </article>
+        <!-- capsule -->
+        <article class="text-container" id="capsule-tab" role="tabpanel" tabindex="0" hidden>
+          <div class="text-header">
+            <span class="crew-title uppercase fs-500"> The terminology...</span>
+            <h2 class="uppercase fs-600">Space capsule</h2>
+          </div>
+          <p class="text-accent">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to
+            reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your
+            time during the flight. It includes a space gym, cinema, and plenty of other activities
+            to keep you entertained.
+          </p>
+        </article>
+        <!-- spaceport -->
+        <article class="text-container" id="spaceport-tab" role="tabpanel" tabindex="0" hidden>
+          <div class="text-header">
+            <span class="crew-title uppercase fs-500"> The terminology...</span>
+            <h2 class="uppercase fs-600">Spaceport</h2>
+          </div>
+          <p class="text-accent">
+            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy
+            to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral,
+            our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
+          </p>
+        </article>
+
+        <!-- Dot menu -->
+        <!-- <div class="dot-indicators flex" role="tablist" aria-label="crew list">
+          <button
+            class="active"
+            role="tab"
+            tabindex="0"
+            aria-current="location"
+            aria-controls="commander-tab"
+            data-image="commander-image"
+          >
+            <span class="sr-only">The commander</span>
+          </button>
+          <button
+            role="tab"
+            tabindex="0"
+            aria-current="none"
+            aria-controls="specialist-tab"
+            data-image="specialist-image"
+          >
+            <span class="sr-only">The mission specialist</span>
+          </button>
+          <button
+            role="tab"
+            tabindex="0"
+            aria-current="none"
+            aria-controls="pilot-tab"
+            data-image="pilot-image"
+          >
+            <span class="sr-only">The Pilot</span>
+          </button>
+          <button
+            role="tab"
+            tabindex="0"
+            aria-current="none"
+            aria-controls="engineer-tab"
+            data-image="engineer-image"
+          >
+            <span class="sr-only">The engineer</span>
+          </button>
+        </div> -->
+      </section>
+      <!-- number indicators -->
+      <div class="number-indicators grid">
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+    </main>
+  </body>
+</html>
