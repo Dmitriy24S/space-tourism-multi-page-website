@@ -155,53 +155,41 @@
             our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
           </p>
         </article>
-
-        <!-- Dot menu -->
-        <!-- <div class="dot-indicators flex" role="tablist" aria-label="crew list">
-          <button
-            class="active"
-            role="tab"
-            tabindex="0"
-            aria-current="location"
-            aria-controls="commander-tab"
-            data-image="commander-image"
-          >
-            <span class="sr-only">The commander</span>
-          </button>
-          <button
-            role="tab"
-            tabindex="0"
-            aria-current="none"
-            aria-controls="specialist-tab"
-            data-image="specialist-image"
-          >
-            <span class="sr-only">The mission specialist</span>
-          </button>
-          <button
-            role="tab"
-            tabindex="0"
-            aria-current="none"
-            aria-controls="pilot-tab"
-            data-image="pilot-image"
-          >
-            <span class="sr-only">The Pilot</span>
-          </button>
-          <button
-            role="tab"
-            tabindex="0"
-            aria-current="none"
-            aria-controls="engineer-tab"
-            data-image="engineer-image"
-          >
-            <span class="sr-only">The engineer</span>
-          </button>
-        </div> -->
       </section>
+
       <!-- number indicators -->
-      <div class="number-indicators grid">
-        <button class="active">1</button>
-        <button>2</button>
-        <button>3</button>
+      <div class="number-indicators grid" role="tablist" aria-label="technology list">
+        <button
+          class="active"
+          role="tab"
+          tabindex="0"
+          aria-current="none"
+          aria-controls="vehicle-tab"
+          data-image="vehicle-image"
+        >
+          <span class="sr-only">The Vehicle</span>
+          <span aria-hidden="true"> 1 </span>
+        </button>
+        <button
+          role="tab"
+          tabindex="0"
+          aria-current="none"
+          aria-controls="capsule-tab"
+          data-image="capsule-image"
+        >
+          <span class="sr-only">The Capsule</span>
+          <span aria-hidden="true"> 2 </span>
+        </button>
+        <button
+          role="tab"
+          tabindex="0"
+          aria-current="none"
+          aria-controls="spaceport-tab"
+          data-image="spaceport-image"
+        >
+          <span class="sr-only">The Spaceport</span>
+          <span aria-hidden="true"> 3 </span>
+        </button>
       </div>
     </main>
   </body>

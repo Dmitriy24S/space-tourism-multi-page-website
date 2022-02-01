@@ -858,6 +858,8 @@ body {
   }
   .crew .text-container {
     margin-top: 8rem;
+    max-height: 30rem;
+    min-height: 20rem;
   }
   .crew-img img {
     max-width: 100%;
@@ -988,6 +990,7 @@ body {
   }
   .technology .text-container {
     max-width: 30rem;
+    min-width: 30rem;
   }
   .technology-img {
     margin-left: auto;
